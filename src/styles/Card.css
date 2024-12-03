@@ -1,0 +1,67 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f7fa;
+    margin: 0; /* Remove body margin */
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allow cards to wrap if screen is smaller */
+    gap: 20px; /* Add gap between cards */
+    padding: 20px; /* Adjust padding for spacing around */
+    width: 80%; /* Control the container width */
+    max-width: 1200px; /* Limit the width to avoid excessive stretching */
+    margin: 0 auto; /* Ensure it's centered horizontally */
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(238, 243, 244);
+    padding: 30px 20px;
+    margin: 10px; /* Adjust margin for spacing */
+    border-radius: 9px;
+    box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.178);
+    transition: 0.1s all ease;
+    width: 35%; /* Control card width */
+    text-align: center;
+}
+
+.cards:hover {
+    box-shadow: 34px 34px 34px rgba(0, 0, 0, 0.178);
+}
+
+.cards img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.cards .heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cards a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+}
+
+.cards a:hover {
+    text-decoration: underline;
+}

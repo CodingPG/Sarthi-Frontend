@@ -1,0 +1,206 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #c8e8e9, #f0f1f8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 85%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 30px 20px;  /* Reduced bottom padding */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Reducing margin at the bottom to reduce gap */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Added gap between left and right sides */
+}
+
+.left-side {
+    width: 30%;
+    margin-right: 5%;
+}
+
+.details {
+    margin: 10px 0; /* Reduced margin to minimize space */
+}
+
+.details i {
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 5px; /* Reduced bottom margin */
+}
+
+.details .topic {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.details .text {
+    font-size: 14px;
+    color: #afafb6;
+}
+
+.right-side {
+    width: 60%;
+}
+
+.topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #F0F1F8;
+    border-radius: 6px;
+    font-size: 16px;
+    margin: 5px 0; /* Reduced margin to minimize space */
+}
+
+textarea {
+    height: 90px;
+    resize: none;
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
+}
+
+.phone-code {
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 6px 0 0 6px;
+    font-size: 16px;
+}
+
+input[type="tel"] {
+    border-radius: 0 6px 6px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    margin: 10px 0; /* Reduced margin to minimize gap */
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 8px 12px; /* Smaller button size */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px; /* Keep the same font size */
+    width: auto; /* Auto width for a normal button size */
+    margin-right: 10px; /* Space between buttons */
+}
+
+input[type="submit"] {
+    background-color: #3e2093; /* Submit button color */
+    color: #fff;
+}
+
+input[type="reset"] {
+    background-color: #ff5c5c; /* Reset button color */
+    color: #fff;
+}
+
+/* Button Hover Effects */
+input[type="submit"]:hover {
+    background-color: #5029bc; /* Darker color on hover */
+}
+
+input[type="reset"]:hover {
+    background-color: #ff2e2e; /* Darker color on hover */
+}
+
+/* Social Media Container */
+.social-media {
+    margin-top: 10px;  /* Reduced top margin to minimize space */
+    display: flex; /* Flexbox for a single line */
+    justify-content: space-between; /* Equal spacing */
+}
+
+.social-icon {
+    color: #fff; /* Default text color */
+    font-size: 24px;
+    transition: 0.3s;
+    padding: 10px; /* Add some padding */
+    border: 2px solid transparent; /* Initial border color */
+    border-radius: 6px; /* Round corners for better appearance */
+    width: 48px; /* Fixed width for icons */
+    height: 48px; /* Fixed height for icons */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the icon */
+    text-decoration: none; /* Remove underline */
+}
+
+.social-icon:hover {
+    opacity: 0.8; /* Slightly dim the icon on hover */
+}
+
+/* Specific Colors for Social Media Icons */
+.social-icon.fb {
+    background-color: #4267B2; /* Facebook color */
+}
+
+.social-icon.tw {
+    background-color: #1DA1F2; /* Twitter color */
+}
+
+.social-icon.ig {
+    background-color: #C13584; /* Instagram color */
+}
+
+.social-icon.ln {
+    background-color: #0077B5; /* LinkedIn color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .left-side {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+}

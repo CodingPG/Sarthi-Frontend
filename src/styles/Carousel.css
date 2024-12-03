@@ -1,0 +1,35 @@
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item img {
+    height: 500px;
+    width: 100%;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Neutral dark overlay */
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: relative;
+    z-index: 2; /* Keep text above the overlay */
+}
+
+.carousel-caption h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: wheat;
+}
+
+.carousel-caption p {
+    font-size: 16px;
+    color: rgb(242, 228, 201);
+}

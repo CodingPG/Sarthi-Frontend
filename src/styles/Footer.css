@@ -1,0 +1,38 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center the footer */
+    padding: 0 20px; /* Add padding on sides */
+  }
+  
+  .footer-left {
+    text-align: left;
+  }
+  
+  .footer-center {
+    text-align: center;
+  }
+  
+  .footer-right {
+    text-align: right;
+  }
+  
+  .project-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .project-by {
+    font-size: 14px;
+  }
+  
+  .tata-strive {
+    font-size: 16px;
+  }
+  

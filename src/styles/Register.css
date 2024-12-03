@@ -1,0 +1,221 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #00aaff, #00ffaa);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+/* Center the registration form container with space from the top */
+body.registration-page {
+    padding: 50px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align container to the top */
+    min-height: 100vh;       /* Full viewport height */
+    background: linear-gradient(45deg, #00aaff, #00ffaa);
+    box-sizing: border-box;
+}
+
+/* Add space between the navbar and the container */
+.login-container {
+    background: linear-gradient(135deg, #ffffff, #e6f7ff);
+    width: 100%;
+    margin-left: 75px;
+    max-width: 1200px; /* Keep the original width */
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+/* Form Title */
+h4.form-title {
+    color: #005580;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+/* Page Title */
+h1.page-title {
+    color: #005580;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode h4.form-title {
+    color: #99ccff;
+}
+
+/* Labels */
+form label {
+    display: block;
+    margin: 12px 0 6px;
+    color: #005580;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode form label {
+    color: #99ccff;
+}
+
+/* Input fields and textareas */
+form input[type="text"],
+form input[type="city"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="date"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #cce7ff;
+    border-radius: 4px;
+    background-color: #f0f8ff;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    color: #333;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode form input[type="text"],
+body.dark-mode form input[type="city"],
+body.dark-mode form input[type="tel"],
+body.dark-mode form input[type="date"],
+body.dark-mode form input[type="password"],
+body.dark-mode form select,
+body.dark-mode form textarea {
+    background-color: #444444;
+    color: #ffffff;
+    border-color: #666666;
+}
+
+/* Placeholder text color */
+form input::placeholder, form textarea::placeholder {
+    color: #888;
+}
+
+body.dark-mode form input::placeholder, body.dark-mode form textarea::placeholder {
+    color: #cccccc;
+}
+
+/* Button styling */
+form button[type="submit"] {
+    width: 100%;
+    background: linear-gradient(45deg, #007acc, #0099cc);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background: linear-gradient(45deg, #006699, #0088aa);
+}
+
+body.dark-mode form button[type="submit"] {
+    background: linear-gradient(45deg, #555555, #777777);
+}
+
+/* Switch to login link */
+.switch-form {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.switch-form a {
+    color: #005580;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.switch-form a:hover {
+    text-decoration: underline;
+}
+
+body.dark-mode .switch-form a {
+    color: #99ccff;
+}
+
+/* Form inputs on focus */
+form input[type="text"]:focus,
+form input[type="city"]:focus,
+form input[type="tel"]:focus,
+form input[type="date"]:focus,
+form input[type="password"]:focus,
+
+form select:focus,
+form textarea:focus {
+    border-color: #007acc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.4);
+    transition: border-color 0.3s ease;
+}
+
+body.dark-mode form input[type="text"]:focus,
+body.dark-mode form input[type="city"]:focus,
+body.dark-mode form input[type="tel"]:focus,
+body.dark-mode form input[type="date"]:focus,
+body.dark-mode form input[type="password"]:focus,
+
+body.dark-mode form select:focus,
+body.dark-mode form textarea:focus {
+    border-color: #99ccff;
+    box-shadow: 0 0 5px rgba(153, 204, 255, 0.4);
+
+
+}
+
+/* Flexbox for form rows */
+.form-row {
+    display: flex;
+    justify-content: space-between; /* Space between the fields */
+    margin-bottom: 30px; /* Add some space between rows */
+}
+
+/* Ensure each form group takes up half the space */
+.form-group {
+    width: 48%; /* Adjust width if needed */
+}
+
+/* Styling for select elements (Gender and Relationship) */
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #cce7ff;
+    border-radius: 4px;
+    background-color: #f0f8ff;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    color: #333;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Placeholder styling for dark mode */
+body.dark-mode form select {
+    background-color: #444444;
+    color: #ffffff;
+    border-color: #666666;
+}
+
+/* Focus state for select elements */
+form select:focus {
+    border-color: #007acc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.4);
+    transition: border-color 0.3s ease;
+}
+
+body.dark-mode form select:focus {
+    border-color: #99ccff;
+    box-shadow: 0 0 5px rgba(153, 204, 255, 0.4);
+}

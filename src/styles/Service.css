@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Services Container */
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+  }
+  
+  .service {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+  }
+  
+  .service h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #005580;
+  }
+  
+  .service p {
+    padding: 0 15px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .service ul {
+    text-align: left;
+    margin: 15px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .service ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .bullet-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .service-btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    color: white;
+    background: #007acc;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .service-btn:hover {
+    background: #005580;
+  }
+  
